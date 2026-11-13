@@ -47,49 +47,63 @@
 //     Console.WriteLine(point);
 // }
 
-int[] grades = { 4, 5, 3, 5, 4, 2 };
+// int[] grades = { 4, 5, 3, 5, 4, 2 };
 
-for (int i = 0; i < grades.Length - 1; i++)
-{
-    for (int j = 0; j < grades.Length - 1 - i; j++)
-    {
-        if (grades[j] < grades[j + 1])
-        {
-            int temp = grades[j];
-            grades[j] = grades[j + 1];
-            grades[j + 1] = temp;
+// for (int i = 0; i < grades.Length - 1; i++)
+// {
+//     for (int j = 0; j < grades.Length - 1 - i; j++)
+//     {
+//         if (grades[j] < grades[j + 1])
+//         {
+//             int temp = grades[j];
+//             grades[j] = grades[j + 1];
+//             grades[j + 1] = temp;
 
-        }
-    }
-}
+//         }
+//     }
+// }
 
-foreach (int grade in grades)
-{
-    Console.WriteLine(grade);
-}
+// foreach (int grade in grades)
+// {
+//     Console.WriteLine(grade);
+// }
 
-System.Console.WriteLine();
+// System.Console.WriteLine();
 
-int[] GenerateScheduleSlots(int lessonsCount)
-{
-    int[] slots = new int[lessonsCount];
+// int[] GenerateScheduleSlots(int lessonsCount)
+// {
+//     int[] slots = new int[lessonsCount];
 
-    for (int i = 0; i < lessonsCount; i++)
-    {
-        if (i % 2 != 0)
-        {
-            slots[i] = i + 1;
-        }
+//     for (int i = 0; i < lessonsCount; i++)
+//     {
+//         if (i % 2 != 0)
+//         {
+//             slots[i] = i + 1;
+//         }
 
-    }
+//     }
 
-    return slots;
-}
+//     return slots;
+// }
 
-int[] slots = GenerateScheduleSlots(6);
+// int[] slots = GenerateScheduleSlots(6);
 
-foreach (int slot in slots)
-{
-    Console.WriteLine(slot);
-}
+// foreach (int slot in slots)
+// {
+//     Console.WriteLine(slot);
+// }
+
+
+
+// int[] grades = { 4, 5, 3, 5, 4, 2 };
+// Array.Sort(grades);
+
+// foreach (int grade in grades)
+// {
+//     Console.WriteLine(grade);
+// }
+
+// Задача А
+System.Console.Write("Введите целое число: ");
+int n = int.Parse(Console.ReadLine()!);
 

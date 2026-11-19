@@ -107,3 +107,32 @@
 System.Console.Write("Введите целое число: ");
 int n = int.Parse(Console.ReadLine()!);
 
+int[] squares = new int[n];
+
+for (int i = 0; i < n; i++)
+{
+    int number = i + 1;
+    squares[i] = number * number;
+}
+
+foreach (int square in squares)
+{
+    Console.Write(square + " ");
+}
+
+// Задача Б
+System.Console.Write("Циферки: ");
+int[] numbers = { 5, -3, 12, -8, 0, -1, 7 };
+
+for (int i = 0; i < numbers.Length; i++)
+{
+    if (numbers[i] < 0)
+    {
+        numbers[i] = 0;
+    }
+}
+
+foreach (int num in numbers)
+{
+    Console.Write(num + " ");
+}
